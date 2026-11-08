@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 · 血压拍拍记</title>
+<style>
+  :root {
+    --primary: #2F6F6A;
+    --text: #26241F;
+    --secondary: #6B6660;
+    --bg: #FAF7F2;
+    --card: #FFFFFF;
+    --line: #EAE4DB;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+  header { padding: 20px 0 8px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .logo {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: var(--primary); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 700;
+  }
+  .brand-name { font-size: 15px; color: var(--secondary); }
+  h1 { font-size: 26px; font-weight: 700; }
+  .updated { margin-top: 6px; font-size: 14px; color: var(--secondary); }
+  .lang-switch {
+    margin: 16px 0 8px; display: inline-flex; border: 1px solid var(--line);
+    border-radius: 999px; overflow: hidden; background: var(--card);
+  }
+  .lang-switch button {
+    border: none; background: transparent; padding: 8px 18px;
+    font-size: 14px; cursor: pointer; color: var(--secondary);
+  }
+  .lang-switch button.active { background: var(--primary); color: #fff; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 26px 24px; margin-top: 16px;
+  }
+  h2 { font-size: 18px; margin: 22px 0 10px; color: var(--primary); }
+  h2:first-child { margin-top: 0; }
+  p { font-size: 15.5px; margin: 8px 0; }
+  footer {
+    margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line);
+    font-size: 13px; color: var(--secondary); text-align: center;
+  }
+  a { color: var(--primary); text-decoration: none; }
+  #en { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="logo">压</div>
+      <div class="brand-name">血压拍拍记 · BP Tracker</div>
+    </div>
+    <h1>隐私政策 / Privacy Policy</h1>
+    <p class="updated" id="updated-zh">更新日期：2026 年 11 月 8 日</p>
+    <p class="updated" id="updated-en" style="display:none">Last updated: November 8, 2026</p>
+    <div class="lang-switch">
+      <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- 中文 -->
+  <div class="card" id="zh">
+    <h2>一、我们如何处理你的信息</h2>
+    <p>1. 血压拍拍记（下称「本 App」）不要求注册账号，不收集任何可识别你身份的信息。</p>
+    <p>2. 你记录的血压数据、脉搏、备注及血压计照片，默认全部保存在你的设备本地，不会上传至我们的服务器。</p>
+    <p>3. iCloud 同步为会员可选功能：开启后，血压记录（不含照片）会写入你个人 iCloud 云盘（由 Apple 提供并加密），只有登录同一 Apple ID 的设备可读取；关闭该功能后数据仅存于本机。我们不运营该同步服务，也无法读取其中的内容。</p>
+
+    <h2>二、权限使用说明</h2>
+    <p>1. 相机：仅用于拍摄血压计屏幕以识别读数，不会用于其他用途。</p>
+    <p>2. 拍照识别：你可以选择本地识别（识别过程完全在设备上完成）。使用云端识别时，拍摄的血压计照片会临时发送至第三方识别服务（阿里云通义千问）用于提取屏幕数字，识别完成后我们不会长期保存该照片。</p>
+    <p>3. 通知：测量提醒由系统本地通知触发，完全在本机运行，不经过任何服务器。</p>
+
+    <h2>三、订阅与支付</h2>
+    <p>会员订阅的支付由 Apple App Store 处理，我们无法接触你的支付方式、卡号等任何付款信息，仅能获知订阅是否有效。本 App 当前提供以下自动续费订阅：年度会员（¥28/年）、首年优惠档（¥18/年，仅首次订阅用户可享）、月度会员（¥9.9/月）。具体价格、币种与优惠资格以 App Store 订阅页面显示为准。</p>
+
+    <h2>四、你主动分享的数据</h2>
+    <p>复诊报告（PDF/长图）、CSV 数据导出均由你主动发起，通过系统分享面板发送给你选择的应用（如微信、邮件），本 App 不会自行向外传输。开启会员「iCloud 同步」后，记录（不含照片）会保存到你个人的 iCloud 云盘，详见第六条。</p>
+
+    <h2>五、第三方服务</h2>
+    <p>本 App 未接入任何统计、广告类 SDK。除上述云端识别服务外，不与任何第三方共享你的数据。</p>
+
+    <h2>六、数据的保存与删除</h2>
+    <p>1. 默认情况下，全部记录与照片仅保存在你的设备本地。</p>
+    <p>2. 若你是会员并开启「iCloud 同步」，血压记录（不含照片）会同时保存到你个人的 iCloud 云盘（Apple 服务）；卸载 App 会删除本机数据，可凭该同步备份在新设备恢复。我们无法读取你 iCloud 中的内容；如需彻底删除，可在系统设置中关闭本 App 的 iCloud 同步，或删除对应 Apple 账户下的备份数据。</p>
+    <p>3. 未开启同步时，删除本 App 后全部记录与照片将一并删除且无法恢复，请提前自行导出备份。</p>
+
+    <h2>七、未成年人保护</h2>
+    <p>本 App 面向成年人。未成年人应在监护人陪同下使用。</p>
+
+    <h2>八、政策变更与联系我们</h2>
+    <p>本政策更新时会在 App 内公示。如有疑问，请联系：<a href="mailto:zp.jim@foxmail.com">zp.jim@foxmail.com</a></p>
+  </div>
+
+  <!-- English -->
+  <div class="card" id="en">
+    <h2>1. How We Handle Your Information</h2>
+    <p>1.1 BP Tracker ("the App") does not require an account and does not collect any personally identifiable information.</p>
+    <p>1.2 Blood pressure readings, pulse, notes, and photos of your BP monitor are stored locally on your device by default and are never uploaded to our servers.</p>
+    <p>3. iCloud Sync is an optional member feature: when enabled, your BP records (excluding photos) are written to your personal iCloud Drive (provided and encrypted by Apple), readable only by devices signed in with the same Apple ID. When disabled, data stays on your device. We do not operate this sync service and cannot access its contents.</p>
+
+    <h2>2. Permissions</h2>
+    <p>2.1 Camera: used solely to photograph your BP monitor screen for reading recognition, and for no other purpose.</p>
+    <p>2.2 Photo recognition: you may choose on-device recognition (processed entirely on your device). When using cloud recognition, the photo is temporarily sent to a third-party recognition service (Alibaba Cloud Qwen) to extract the numbers shown on screen; the photo is not retained after recognition.</p>
+    <p>2.3 Notifications: measurement reminders are delivered via local system notifications, running entirely on your device without any server.</p>
+
+    <h2>3. Subscription &amp; Payment</h2>
+    <p>Subscription payments are processed by Apple App Store. We never have access to your payment method or card details — only whether your subscription is active. The App currently offers the following auto-renewable subscriptions: Yearly Membership (¥28/year), First-Year Offer (¥18/year, first-time subscribers only), and Monthly Membership (¥9.9/month). Actual prices, currencies, and offer eligibility are shown on the App Store subscription page.</p>
+
+    <h2>4. Data You Share Voluntarily</h2>
+    <p>Visit reports (PDF/long image) and CSV exports are always initiated by you and sent through the iOS share sheet to apps you choose (e.g., WeChat, Mail). The App never transmits data on its own. With the member "iCloud Sync" feature enabled, records (excluding photos) are stored in your personal iCloud Drive — see Section 6.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>The App contains no analytics or advertising SDKs. Other than the cloud recognition service described above, we share your data with no third parties.</p>
+
+    <h2>6. Data Retention &amp; Deletion</h2>
+    <p>6.1 By default, all records and photos exist only on your device.</p>
+    <p>6.2 If you are a member with "iCloud Sync" enabled, BP records (excluding photos) are also stored in your personal iCloud Drive (an Apple service). Uninstalling the App removes local data; you can restore from this backup on a new device. We cannot access your iCloud contents. To delete permanently, turn off iCloud sync for the App in system Settings, or delete the backup under your Apple account.</p>
+    <p>6.3 Without sync enabled, deleting the App permanently deletes all records and photos. Please export a backup beforehand.</p>
+
+    <h2>7. Children</h2>
+    <p>The App is intended for adults. Minors should use it under the supervision of a guardian.</p>
+
+    <h2>8. Changes &amp; Contact</h2>
+    <p>Any updates to this policy will be announced within the App. Questions? Contact us at <a href="mailto:zp.jim@foxmail.com">zp.jim@foxmail.com</a></p>
+  </div>
+
+  <footer>
+    血压拍拍记 BP Tracker · 本页面为 App 隐私政策的公开网页版本，与 App 内「我的 → 关于 App → 隐私政策」内容一致
+  </footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('zh').style.display = lang === 'zh' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('updated-zh').style.display = lang === 'zh' ? 'block' : 'none';
+    document.getElementById('updated-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  }
+</script>
+</body>
+</html>
